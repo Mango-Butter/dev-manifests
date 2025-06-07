@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: batch
-          image: mangobutter/mangoboss-admih:latest
+          image: mangobutter/mangoboss-admin:latest
           ports:
             - containerPort: 8080
           envFrom:
