@@ -10,7 +10,7 @@ spec:
     - host: api.mangoboss.store
       http:
         paths:
-          - path: /app
+          - path: /
             pathType: Prefix
             backend:
               service:
