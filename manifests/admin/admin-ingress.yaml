@@ -1,23 +1,16 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: main-ingress
+  name: admin-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-    - host: your-domain.com
+    - host: admin.api.mangoboss.store
       http:
         paths:
           - path: /app
-            pathType: Prefix
-            backend:
-              service:
-                name: app-service
-                port:
-                  number: 80
-          - path: /admin
             pathType: Prefix
             backend:
               service:
