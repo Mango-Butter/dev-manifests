@@ -11,7 +11,7 @@ spec:
   tls:
     - hosts:
         - admin.api.mangoboss.store
-      secretName: mangoboss-tls-secrett
+      secretName: mangoboss-admin-tls-secret
   rules:
     - host: admin.api.mangoboss.store
       http:
