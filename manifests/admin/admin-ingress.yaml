@@ -10,7 +10,7 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - api.mangoboss.store
+        - admin.api.mangoboss.store
       secretName: mangoboss-tls-secrett
   rules:
     - host: admin.api.mangoboss.store
