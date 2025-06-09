@@ -6,16 +6,14 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Mango-Butter/dev-manifests.git
-    path: app
-    targetRevision: main
+    repoURL: https://github.com/Mango-Butter/dev-manifests
+    path: manifests/app
+    targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
     namespace: app
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+    automated: {}
   ignoreDifferences:
     - group: apps
       kind: Deployment
