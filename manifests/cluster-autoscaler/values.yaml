@@ -1,0 +1,23 @@
+autoDiscovery:
+  clusterName: mangoboss
+  enabled: true
+
+awsRegion: ap-northeast-2
+
+rbac:
+  create: true
+
+extraArgs:
+  skip-nodes-with-system-pods: "false"
+  skip-nodes-with-local-storage: "false"
+  balance-similar-node-groups: "true"
+  expander: least-waste
+
+serviceAccount:
+  create: true
+  name: cluster-autoscaler
+
+tolerations:
+  - key: "node-role.kubernetes.io/control-plane"
+    operator: "Exists"
+    effect: "NoSchedule"
