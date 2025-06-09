@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: mangobutter/mangoboss-app:e7aac66
+          image: mangobutter/mangoboss-app:eb9db45
           ports:
             - containerPort: 8080
           envFrom:
