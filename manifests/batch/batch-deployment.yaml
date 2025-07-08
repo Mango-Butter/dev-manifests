@@ -6,6 +6,8 @@ metadata:
     app: batch
 spec:
   replicas: 1
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       app: batch
@@ -18,7 +20,7 @@ spec:
         - name: batch
           image: mangobutter/mangoboss-batch:331e745
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
           envFrom:
             - configMapRef:
                 name: mangoboss-config
@@ -29,8 +31,8 @@ spec:
               value: Asia/Seoul
           resources:
             requests:
-              memory: "256Mi"
-              cpu: "250m"
+              memory: "512Mi"
+              cpu: "1000m"
             limits:
-              memory: "1Gi"
+              memory: "2Gi"
               cpu: "1000m"
