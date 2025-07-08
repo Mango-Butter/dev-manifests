@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: mangobutter/mangoboss-app:faba4be
+          image: mangobutter/mangoboss-app:6c20f0a
           ports:
             - containerPort: 8080
           readinessProbe:
