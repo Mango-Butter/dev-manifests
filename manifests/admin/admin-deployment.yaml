@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: admin
-          image: docker.io/mangobutter/mangoboss-admin:61adf95
+          image: docker.io/mangobutter/mangoboss-admin:4d3d836
           ports:
             - containerPort: 8082
           readinessProbe:
