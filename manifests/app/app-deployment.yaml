@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: docker.io/mangobutter/mangoboss-app:4d3d836
+          image: docker.io/mangobutter/mangoboss-app:35e89e7
           ports:
             - containerPort: 8080
           readinessProbe:
